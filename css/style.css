@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color: #eeeeee;
+    position: relative;
+    height: 50px;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+h1 {
+    font-size: 20px;
+    color:#eee;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+    display: block;
+    height: 100%;
+    width: 200px;
+    background-color: #55c5c0;
+    position: absolute;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 10px;
+    height: 100%;
+    position: relative;
+}
+
+nav a {
+    color: #b9b5b5;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    background: #55c5c0;
+    height: 3px;
+    width:0%;
+    position: absolute;
+    top:0;
+    transition: all ease-in-out 200ms; 
+}
+
+nav a:hover::before {
+    width:100%
+}
