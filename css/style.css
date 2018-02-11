@@ -57,6 +57,11 @@ nav a {
     text-decoration: none;
     font-size: 15px;
     font-weight: normal;
+    transition: all ease-in 200ms;
+}
+
+nav a:hover {
+    color: #55c5c0;
 }
 
 nav a::before {
