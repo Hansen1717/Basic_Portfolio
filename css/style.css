@@ -3,16 +3,22 @@
     padding: 0;
 }
 
-.container {
+body {
+    background-image: url("../images/Background2.png");
+    background-repeat: repeat;
+}
+
+.headerContainer {
     width: 80%;
     margin: 0 auto;
 }
 
 header {
     font-family: 'Georgia', Times, Times New Roman, serif;
-    background-color: #eeeeee;
+    background-color: #ffffff;
     position: relative;
-    height: 50px;
+    height: 90px;
+    border-bottom: 15px ridge #55c5c0;
 }
 
 header::after {
@@ -22,14 +28,14 @@ header::after {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 30px;
     color:#eee;
     text-align: center;
-    line-height: 50px;
+    line-height: 85px;
     float: left;
     display: block;
     height: 100%;
-    width: 200px;
+    width: 300px;
     background-color: #55c5c0;
     position: absolute;
 }
@@ -47,7 +53,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 50px;
-    padding-top: 10px;
+    padding-top: 25px;
     height: 100%;
     position: relative;
 }
@@ -55,7 +61,7 @@ nav li {
 nav a {
     color: #b9b5b5;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: normal;
     transition: all ease-in 200ms;
 }
@@ -68,13 +74,111 @@ nav a::before {
     content: '';
     display: block;
     background: #55c5c0;
-    height: 3px;
+    height: 4px;
     width:0%;
     position: absolute;
-    top:0;
+    top: 0;
     transition: all ease-in-out 200ms; 
 }
 
 nav a:hover::before {
     width:100%
+}
+
+.main {
+    margin: 20px 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.paragraphContainer {
+    margin: 0 150px;
+    width: 45%;
+    background-color: white;
+    content: '';
+    display: table;
+    clear: both;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: #55c5c0;
+    padding:0 0 5px 0;
+    margin: 20px 20px 10px 20px;
+    border-bottom: solid 2px #55c5c0;
+    z-index: 10;
+}
+
+.profilePic {
+    float: left;
+    width: 40%;
+    height:auto;
+    border: 4px solid #55c5c0;
+    margin: 20px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #808080;
+    padding: 20px;
+}
+
+.asideContainer {
+    margin: 0 150px;
+    background-color: white;
+    content: '';
+    display: table;
+    clear: both;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.socialMedia {
+    margin:20px 15px 25px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #686868;
+    float: left;
+    box-shadow: -5px 5px rgba(0, 0, 0, 0.7);
+}
+
+#linkedIn{
+    background: url("../images/Linkedin.png");
+    transition: all ease-in-out 300ms;
+}
+
+#linkedIn:hover {
+    background-position: 0 -100px;
+}
+
+#gitHub{
+    background: url("../images/Github.png");
+    transition: all ease-in-out 300ms;
+}
+
+#gitHub:hover {
+    background-position: 0 -100px;
+}
+
+#facebook{
+    background: url("../images/Facebook.png");
+    transition: all ease-in-out 300ms;
+}
+
+#facebook:hover {
+    background-position: 0 -100px;
+}
+
+#instagram{
+    background: url("../images/Instagram.png");
+    transition: all ease-in-out 300ms;
+}
+
+#instagram:hover {
+    background-position: 0 -100px;
 }
