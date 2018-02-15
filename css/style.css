@@ -17,8 +17,8 @@ header {
     font-family: 'Georgia', Times, Times New Roman, serif;
     background-color: #ffffff;
     position: relative;
-    height: 90px;
-    border-bottom: 15px ridge #55c5c0;
+    height: 95px;
+    border-bottom: 15px solid #55c5c0;
 }
 
 header::after {
@@ -31,13 +31,16 @@ h1 {
     font-size: 30px;
     color:#eee;
     text-align: center;
-    line-height: 85px;
     float: left;
     display: block;
     height: 100%;
     width: 300px;
     background-color: #55c5c0;
     position: absolute;
+}
+
+.logo{
+    margin: 5px 0 0 50px;
 }
 
 nav {
