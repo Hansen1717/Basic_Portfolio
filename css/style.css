@@ -28,8 +28,6 @@ header::after {
 }
 
 h1 {
-    font-size: 30px;
-    color:#eee;
     text-align: center;
     float: left;
     display: block;
@@ -39,8 +37,8 @@ h1 {
     position: absolute;
 }
 
-.logo{
-    margin: 5px 0 0 50px;
+.logo {
+    margin-top: 5px
 }
 
 nav {
@@ -88,20 +86,11 @@ nav a:hover::before {
     width:100%
 }
 
-.main {
-    margin: 20px 0;
-    width: 100%;
-    height: auto;
-    position: relative;
-}
-
 .paragraphContainer {
-    margin: 0 150px;
-    width: 45%;
+    width: 40%;
+    margin: 20px 0 120px 150px;
+    float: left;
     background-color: white;
-    content: '';
-    display: table;
-    clear: both;
 }
 
 h2 {
@@ -115,33 +104,37 @@ h2 {
 }
 
 .profilePic {
+    width: 45%;
+    height: auto;
     float: left;
-    width: 40%;
-    height:auto;
-    border: 4px solid #55c5c0;
-    margin: 20px;
+    margin: 17px 17px 17px 17px;
+    box-shadow: -5px 5px rgba(0, 0, 0, 0.7);
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #808080;
-    padding: 20px;
+    margin: 20px 20px 20px 20px;
 }
 
 .asideContainer {
-    margin: 0 150px;
+    margin: 20px 150px 120px 0;
     background-color: white;
+    float: right;
+}
+
+.asideContainer::before, .asideContainer::after {
     content: '';
     display: table;
-    clear: both;
-    position: absolute;
-    top: 0;
-    right: 0;
+}
+
+.asideContainer::after {
+    clear :both;
 }
 
 .socialMedia {
-    margin:20px 15px 25px;
+    margin:20px 20px 35px;
     display: block;
     width: 100px;
     height: 100px;
@@ -150,7 +143,8 @@ p {
     box-shadow: -5px 5px rgba(0, 0, 0, 0.7);
 }
 
-#linkedIn{
+
+#linkedIn {
     background: url("../images/Linkedin.png");
     transition: all ease-in-out 300ms;
 }
@@ -159,7 +153,7 @@ p {
     background-position: 0 -100px;
 }
 
-#gitHub{
+#gitHub {
     background: url("../images/Github.png");
     transition: all ease-in-out 300ms;
 }
@@ -168,7 +162,7 @@ p {
     background-position: 0 -100px;
 }
 
-#facebook{
+#facebook {
     background: url("../images/Facebook.png");
     transition: all ease-in-out 300ms;
 }
@@ -177,7 +171,7 @@ p {
     background-position: 0 -100px;
 }
 
-#instagram{
+#instagram {
     background: url("../images/Instagram.png");
     transition: all ease-in-out 300ms;
 }
@@ -185,3 +179,22 @@ p {
 #instagram:hover {
     background-position: 0 -100px;
 }
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #686868;
+    position: fixed;
+    bottom: 0;
+    border-top: 4px solid #55c5c0;    
+}
+
+h3 {
+    margin-top: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #b9b5b5;
+}
+
+
