@@ -118,6 +118,105 @@ p {
     margin: 20px 20px 20px 20px;
 }
 
+.paragraphContainer ul {
+    display: block;
+    list-style: none;
+}
+
+.paragraphContainer ul::before, .paragraphContainer ul::after {
+    content: '';
+    display: table;
+}
+
+.paragraphContainer ul::after {
+    clear :both;
+}
+
+.paragraphContainer li {
+    margin: 16px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #686868;
+    list-style: none;
+    float: left;
+    text-decoration: none;
+    background: grey;
+    position: relative;
+}
+
+.paragraphContainer .hangman {
+    background: url("../images/hangman.png");
+}
+
+.paragraphContainer .rpgGame{
+    background: url("../images/RPGGame.png");
+}
+
+.paragraphContainer .trivia {
+    background: url("../images/Trivia.png");
+}
+
+.paragraphContainer .gtInfo {
+    background: url("../images/GTInfo.png");
+}
+
+.paragraphContainer .rpScissors {
+    background: url("../images/rock-paper-scissors.png");
+}
+
+.paragraphContainer li a {
+    display: block;
+    width: 100%;
+    height: 66%;
+    background-color: #55c5c000;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0;
+    font-weight: bold;
+    color: #666666;
+    padding-top: 34%;
+    transition: ease-in-out all 300ms;
+}
+
+.paragraphContainer li a:hover {
+    background-color: #55c5c0;
+    font-size: 26px
+}
+
+.paragraphContainer .contactForm {
+    padding: 0;
+    margin: 0;
+}
+
+.paragraphContainer input {
+    width: 85%;
+    font-size: 16px;
+    margin: 0 0 15px 15px;
+    padding: 2px
+}
+
+.paragraphContainer .message {
+    margin:0 0 15px 15px;
+    padding: 2px;
+    font-size: 16px;
+    width: 85%;
+}
+
+.paragraphContainer p.contactForm {
+    margin: 0 0 15px 15px;
+}
+
+.paragraphContainer button {
+    width: 30%;
+    margin: 0 0 15px 15px;
+    padding: 5px;
+    background-color: #55c5c0;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
 .asideContainer {
     margin: 20px 150px 120px 0;
     background-color: white;
@@ -189,7 +288,7 @@ p {
     border-top: 4px solid #55c5c0;    
 }
 
-h3 {
+h4 {
     margin-top: 40px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
